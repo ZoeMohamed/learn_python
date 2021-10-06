@@ -1,5 +1,4 @@
-# DAY 1 NGULANG BELAJAR PYTHON 😭😭😢
-from git import Repo
+
 print("Hello " + input("siapa namamu ") + "!")
 # Code diatas ini akan eksekusi input dulu nilai dari input yang kita masukkan akan menggantikan input("siapa namamu") => input yang kita masukkan
 
@@ -31,21 +30,20 @@ print(pet_name)
 print(f"Your band name could be {city_name} {pet_name}")
 
 
-# Code untuk push repo
-# make sure .git folder is properly configured
-PATH_OF_GIT_REPO = r'path\to\your\project\folder\.git'
-COMMIT_MESSAGE = 'Belajar ngulang karena lupa 😭😭'
+# # Code untuk push repo
+# # make sure .git folder is properly configured
+# PATH_OF_GIT_REPO = r'path\to\your\project\folder\.git'
 
 
-def git_push():
-    try:
-        repo = Repo(PATH_OF_GIT_REPO)
-        repo.git.add(update=True)
-        repo.index.commit(COMMIT_MESSAGE)
-        origin = repo.remote(name='origin')
-        origin.push()
-    except:
-        print('Some error occured while pushing the code')
+# def git_push():
+#     try:
+#         repo = Repo(PATH_OF_GIT_REPO)
+#         repo.git.add(update=True)
+#         repo.index.commit(COMMIT_MESSAGE)
+#         origin = repo.remote(name='origin')
+#         origin.push()
+#     except:
+#         print('Some error occured while pushing the code')
 
 
-git_push()
+# git_push()
